@@ -1,0 +1,42 @@
+.header {
+    max-width: 100%;
+    box-shadow: 5px 5px 20px gray;
+}
+
+.brand {
+    color: white;
+    margin-left: 2%;
+    padding: 0.8em;
+    width: 5%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.blank {
+    width: 78%;
+}
+
+.cart-wishlist {
+    width: 15%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.header .user-container {
+    color: white;
+    display: inline-block;
+    width: 10em;
+    margin: 1.5em 0.2em 0 1.5em;
+}
+
+.header .user-container .user-dropdown {
+    background-color: #212529;
+    width: 11em;
+    z-index: 1000;
+    position: absolute;
+}
+   
+.header .user-container .user-dropdown .user-dropdown-button {
+    background-color: #212529;
+    border-color: #212529;
+}
