@@ -1,0 +1,14 @@
+<div class="body_container">
+    <div class="row">
+        <ul class="category-list">
+            <li (click)="selectComponent('dashboard')"><mat-icon>dashboard</mat-icon>Dashboard</li>
+            <li (click)="selectComponent('orders')"><mat-icon>border_clear</mat-icon>Orders</li>
+            <li (click)="selectComponent('products')"><mat-icon>inventory_2</mat-icon>Products</li>
+            <li (click)="selectComponent('category')"><mat-icon>category</mat-icon>Category</li>
+            <li (click)="selectComponent('users')"><mat-icon>group</mat-icon>Users</li>
+        </ul>
+    </div>
+    <div class="right_row">
+        <ng-container *ngComponentOutlet="selectedComponent"></ng-container>
+    </div>
+</div>
