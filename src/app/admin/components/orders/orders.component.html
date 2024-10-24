@@ -1,0 +1,40 @@
+<h2>List of orders and order-products</h2>
+
+<div class="row-left">
+    <table *ngIf="orders">
+        <thead>
+            <th>UserName</th>
+            <th>UserEmail</th>
+            <th>OrderDate</th>
+            <th>Street</th>
+            <th>City</th>
+            <th>State</th>
+            <th>ZipCode</th>
+            <th>Country</th>
+            <th>Total</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let order of orders">
+                <td>{{order.userName}}</td>
+                <td>{{order.userEmail}}</td>
+                <td>{{order.orderDate}}</td>
+                <td>{{order.street}}</td>
+                <td>{{order.city}}</td>
+                <td>{{order.state}}</td>
+                <td>{{order.zipCode}}</td>
+                <td>{{order.country}}</td>
+                <td>{{order.total | currency }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="row-right">
+
+</div>
+
+
+<!-- <div *ngFor="let order of orders">
+    <h2>{{order.userName}}</h2>
+    <p>{{order.street}}</p>
+    <p>{{order.city}}</p>
+</div> -->
